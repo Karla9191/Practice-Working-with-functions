@@ -24,10 +24,14 @@ var family = {
 
 function addAllFamilyLuckyNumbers(anArray){
   var sumOfAllLuckyNumbers = 0; //sumOfAllLuckyNumbers is a number, the sum of all lucky numbers.
-
+ for(let x=0;x<anArray.length;x++)
   //To-Do: loop and add; consider nested loops
   //Hint: use the anArray variable to get all of the lucky numbers
-  
+    for(let i=0;i<anArray[x].lucky_numbers.length;i++){
+        sumOfAllLuckyNumbers = sumOfAllLuckyNumbers + anArray[x].lucky_numbers[i];
+
+    }
+
   return sumOfAllLuckyNumbers;
 }
 
